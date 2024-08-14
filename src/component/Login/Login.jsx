@@ -37,7 +37,7 @@ export default function Register() {
             localStorage.setItem('token',data.token);
             
             setTimeout(() => {
-                navigate('/')
+                navigate('/E-comerce/')
             }, 600)
         }).catch((errors)=>{
             let err=errors.response.data;
@@ -110,12 +110,12 @@ export default function Register() {
                                     <hr className="mb-6 border-t" />
                                     <div className="text-center">
                                         <Link className="inline-block text-sm hover:underline text-red-500 dark:text-red-500 align-baseline hover:text-red-800"
-                                            to="/forgotPass">
+                                            to="/E-comerce/forgotPass">
                                             Forgot Password?
                                         </Link>
                                     </div>
                                     <div className="text-center">
-                                        <Link to='/register' className="inline-block hover:underline text-sm text-red-500 dark:text-red-500 align-baseline hover:text-red-800"
+                                        <Link to='/E-comerce/register' className="inline-block hover:underline text-sm text-red-500 dark:text-red-500 align-baseline hover:text-red-800"
                                             >
                                             Need an account? Sign Up
                                         </Link>

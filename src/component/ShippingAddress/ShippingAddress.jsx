@@ -95,7 +95,7 @@ export default function ShippingAddress() {
                             </select>
                             {isLoadingc && <i className='fas fa-spin fa-spinner text-white block'></i>}
                             </div>
-                            <Link to='/addressesForm' className=' hover:underline mb-4 font-bold text-red-600 my-5'>Add New Address</Link>
+                            <Link to='/E-comerce/addressesForm' className=' hover:underline mb-4 font-bold text-red-600 my-5'>Add New Address</Link>
                         </form>
 
 

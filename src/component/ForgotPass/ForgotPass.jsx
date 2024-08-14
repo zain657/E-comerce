@@ -44,7 +44,7 @@ export default function ForgotPass() {
             setIsLoading(false);
             setSuccess(data.message);
             setTimeout(() => {
-                navigate('/resetCode')
+                navigate('/E-comerce/resetCode')
             }, 500)
         }).catch((errors) => {
             let err = errors.response.data;
@@ -74,7 +74,7 @@ export default function ForgotPass() {
                                 <h1 className="block text-2xl font-bold text-gray-800 dark:text-white">Forgot password <span className='text-red-600'>?</span></h1>
                                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
                                     Remember your password?
-                                    <Link to='/login' className="text-red-600 decoration-2 hover:underline font-medium" href="#">
+                                    <Link to='/E-comerce/login' className="text-red-600 decoration-2 hover:underline font-medium" href="#">
                                         Login here
                                     </Link>
                                 </p>

@@ -33,7 +33,7 @@ export default function ResetCode() {
             setIsLoading(false);
             setSuccess(data.status);
             setTimeout(() => {
-                navigate('/resetPass')
+                navigate('/E-comerce/resetPass')
             }, 500)
         }).catch((errors) => {
             let err = errors.response.data;
@@ -63,11 +63,11 @@ export default function ResetCode() {
                                 
                                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
                                     Remember your password?
-                                    <Link to='/login' className="text-red-600 decoration-2 hover:underline font-medium" href="#">
+                                    <Link to='/E-comerce/login' className="text-red-600 decoration-2 hover:underline font-medium" href="#">
                                         Login here
                                     </Link>
                                 </p>
-                                <Link className='text-red-500 hover:underline font-extrabold' to='/forgotPass'>Back</Link>
+                                <Link className='text-red-500 hover:underline font-extrabold' to='/E-comerce/forgotPass'>Back</Link>
                             </div>
 
                             <div className="mt-5 forg">

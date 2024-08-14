@@ -8,7 +8,7 @@ export default function ProtectedRoute({children}) {
     useEffect(() => {
         if (!userToken) {
             setTimeout(() => {
-                navigate('/login');
+                navigate('/E-comerce/login');
             }, 1000);
         }
     }, [userToken]);

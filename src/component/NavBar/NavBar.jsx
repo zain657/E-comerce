@@ -58,22 +58,22 @@ export default function NavBar() {
                     {userToken && <div className={`items-center  justify-between ${show ? 'hidden':''} w-full md:flex md:w-auto md:order-1" id="navbar-sticky`}>
                         <ul className="flex flex-col p-4  md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                             <li>
-                                <NavLink to='/' className="flex flex-col justify-center items-center nav-item font-semibold text-lg py-2 px-3 text-gray-900  rounded md:bg-transparent md:hover:text-red-700  md:p-0 md:dark:hover:text-red-500  "><i className="fa-solid fa-shop"></i><span>Home</span></NavLink>
+                                <NavLink to='/E-comerce/' end className="flex flex-col justify-center items-center nav-item font-semibold text-lg py-2 px-3 text-gray-900  rounded md:bg-transparent md:hover:text-red-700  md:p-0 md:dark:hover:text-red-500  "><i className="fa-solid fa-shop"></i><span>Home</span></NavLink>
                             </li>
                             <li>
-                                <NavLink to='/wishList' className="flex flex-col justify-center items-center nav-item font-semibold text-lg py-2 px-3 text-gray-900 rounded md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:border-gray-700"><i className="fa-regular fa-heart"></i><span>Wish List</span></NavLink>
+                                <NavLink to='/E-comerce/wishList' className="flex flex-col justify-center items-center nav-item font-semibold text-lg py-2 px-3 text-gray-900 rounded md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:border-gray-700"><i className="fa-regular fa-heart"></i><span>Wish List</span></NavLink>
                             </li>
                             <li>
-                                <NavLink to='/categorise' className="flex flex-col justify-center items-center nav-item font-semibold text-lg py-2 px-3 text-gray-900 rounded md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:border-gray-700"><i className="fa-solid fa-table"></i><span>Categorise</span></NavLink>
+                                <NavLink to='/E-comerce/categorise' className="flex flex-col justify-center items-center nav-item font-semibold text-lg py-2 px-3 text-gray-900 rounded md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:border-gray-700"><i className="fa-solid fa-table"></i><span>Categorise</span></NavLink>
                             </li>
                             <li>
-                                <NavLink to='/brands' className="flex flex-col justify-center items-center nav-item font-semibold text-lg py-2 px-3 text-gray-900 rounded md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:border-gray-700"><i className="fa-solid fa-tag"></i><span>Brands</span></NavLink>
+                                <NavLink to='/E-comerce/brands' className="flex flex-col justify-center items-center nav-item font-semibold text-lg py-2 px-3 text-gray-900 rounded md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:border-gray-700"><i className="fa-solid fa-tag"></i><span>Brands</span></NavLink>
                             </li>
                             <li>
-                                <NavLink to='/cart' className="flex flex-col justify-center items-center nav-item font-semibold text-lg py-2 px-3 text-gray-900 rounded md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:border-gray-700"><div className='relative flex flex-col'><i className="fa-solid fa-cart-shopping z-10"></i> <span className='px-1 rounded-full text-sm bg-red-700 text-white absolute top-[-17px] left-[4px]'>{products?.numOfCartItems}</span></div> <span>Cart</span></NavLink>
+                                <NavLink to='/E-comerce/cart' className="flex flex-col justify-center items-center nav-item font-semibold text-lg py-2 px-3 text-gray-900 rounded md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:border-gray-700"><div className='relative flex flex-col'><i className="fa-solid fa-cart-shopping z-10"></i> <span className='px-1 rounded-full text-sm bg-red-700 text-white absolute top-[-17px] left-[4px]'>{products?.numOfCartItems}</span></div> <span>Cart</span></NavLink>
                             </li>
                             {userToken && <li>
-                                <NavLink to='/settings' onClick={()=>{setShow(true)}} className="flex flex-col justify-center items-center nav-item font-semibold text-lg py-2 px-3 text-gray-900 rounded md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:border-gray-700"><i className="fa-solid fa-gear"></i>Settings</NavLink>
+                                <NavLink to='/E-comerce/settings' onClick={()=>{setShow(true)}} className="flex flex-col justify-center items-center nav-item font-semibold text-lg py-2 px-3 text-gray-900 rounded md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:border-gray-700"><i className="fa-solid fa-gear"></i>Settings</NavLink>
                             </li>}
                         </ul>
                     </div>}

@@ -34,7 +34,7 @@ export default function AddressesForm() {
                 token:userToken,
             }
         }).then(({ data }) => {
-            navigate('/addresses');
+            navigate('/E-comerce/addresses');
             
             setIsLoading(false);
 

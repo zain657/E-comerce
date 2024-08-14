@@ -50,7 +50,7 @@ export default function HomeSlider() {
     return (
         <>
             {!isLoading &&<div className='border-2 shadow-lg hover:shadow-[0_0_5px_0_rgba(220,38,38,1),0_0_15px_5px_rgba(220,38,38,0.5)] mt-20 w-full overflow-hidden rounded-[50px] md:rounded-full bg-slate-100'>
-                <Link to='/categorise'>
+                <Link to='/E-comerce/categorise'>
                 <Slider {...settings}>
                     {data?.data.data.map((cat, index) => (
                         <div key={index} className='h-auto w-full group text-center relative overflow-hidden'>

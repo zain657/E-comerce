@@ -25,7 +25,7 @@ export default function Settings() {
     function signOut() {
         setUserToken('');
         localStorage.setItem('token', '');
-        navigate('/login');
+        navigate('/E-comerce/login');
     }
 
     return (
@@ -34,8 +34,8 @@ export default function Settings() {
             {isLoading && <div className='relative z-10 dark:bg-slate-900 bg-white w-full h-screen'><Loading /></div>}
             <div className='md:flex mb-10  overflow-auto w-full'>
                 <div className="p-5 border mx-auto md:mx-0 dark:bg-slate-800 md:w-1/4 min-h-[50vh] md:my-20 mt-20 rounded flex flex-col justify-center items-center text-center text-gray-500 max-w-sm">
-                    <Link to='/updateProfile' className='w-full bg-red-600 hover:bg-red-800 mb-4 py-2 rounded-full font-bold text-white'>Update profile</Link>
-                    <Link to='/addresses' className='w-full bg-red-600 hover:bg-red-800 mb-4 py-2 rounded-full font-bold text-white'>My Addresses</Link>
+                    <Link to='/E-comerce/updateProfile' className='w-full bg-red-600 hover:bg-red-800 mb-4 py-2 rounded-full font-bold text-white'>Update profile</Link>
+                    <Link to='/E-comerce/addresses' className='w-full bg-red-600 hover:bg-red-800 mb-4 py-2 rounded-full font-bold text-white'>My Addresses</Link>
                     <img className="w-32 h-32 rounded-full mx-auto" src="https://loremflickr.com/320/240" alt="" />
                     <div className="text-sm mt-5">
                         <h1 className="font-medium leading-none dark:text-white text-gray-900 hover:text-red-600 transition duration-500 ease-in-out">

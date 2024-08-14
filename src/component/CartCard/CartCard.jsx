@@ -45,7 +45,7 @@ export default function CartCard({ product, removeProductFromCart, products, set
                         <tr>
 
                             <td className="py-4">
-                                <Link to={'/productDetails/' + product.product._id}>
+                                <Link to={'/E-comerce/productDetails/' + product.product._id}>
                                     <div className="flex items-center h-16">
                                         <img className="h-16 w-16 mr-4" src={product.product.imageCover} alt={product.product.title} />
                                         <span className="font-semibold invisible md:visible">{product.product.title}.</span>

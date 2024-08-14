@@ -6,7 +6,7 @@ export default function ProtectedRoute({children}) {
     const {userToken}=useContext(AuthContext);
     return (
         <>
-            {!userToken ? children : <Navigate to='/'/>}
+            {!userToken ? children : <Navigate to='/E-comerce/'/>}
         </>
     )
 }

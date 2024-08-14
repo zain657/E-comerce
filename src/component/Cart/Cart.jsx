@@ -83,7 +83,7 @@ export default function Cart() {
                 <div className="container mx-auto px-4 my-10">
                     <h1 className="text-2xl font-semibold mb-4">Shopping Cart</h1>
                     <div className="flex flex-col md:flex-row gap-4">
-                        {data?.data ? <div className="md:w-3/4">
+                        {products ? <div className="md:w-3/4">
                             {products?.data.products.map((product, index) => {
                                 return <CartCard key={index} animatingProductId={animatingProductId} product={product} removeProductFromCart={removeProductFromCart} setProducts={setProducts} products={products}/>
                             })}
@@ -111,7 +111,7 @@ export default function Cart() {
                                     <span className="font-semibold">Total</span>
                                     <span className="font-semibold">${data?.data.data.totalCartPrice}</span>
                                 </div>
-                                <Link to={'/shippingAddress/' + data?.data.data._id} className="bg-red-500 block text-center hover:bg-red-700 text-white py-2 px-4 rounded-lg mt-4 w-full">Checkout</Link>
+                                <Link to={'/E-comerce/shippingAddress/' + data?.data.data._id} className="bg-red-500 block text-center hover:bg-red-700 text-white py-2 px-4 rounded-lg mt-4 w-full">Checkout</Link>
                             </div>
                         </div>
                     </div>

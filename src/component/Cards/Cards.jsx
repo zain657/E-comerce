@@ -15,11 +15,11 @@ export default function Cards({ product }) {
     return (
         <>
             <div className="w-full group max-w-sm bg-white border mx-auto shadow-lg  hover:border-2 border-gray-200 rounded-lg hover:shadow-[0_0_5px_0_rgba(220,38,38,1),0_0_15px_5px_rgba(220,38,38,0.5)] dark:bg-gray-800 dark:border-gray-700">
-                <Link to={'/productDetails/' + product._id}>
+                <Link to={'/E-comerce/productDetails/' + product._id}>
                     <img className="p-3 rounded-t-lg " src={product.imageCover} alt="product image" />
                 </Link>
                 <div className="px-5 pb-5">
-                    <Link to={'/productDetails/' + product._id}>
+                    <Link to={'/E-comerce/productDetails/' + product._id}>
                         <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white line-clamp-1 hover:underline">{product.title}</h5>
                         <p className='line-clamp-2 text-slate-500 hover:underline'>{product.description}</p>
                     </Link>

@@ -40,7 +40,7 @@ export default function Register() {
             setIsLoading(false);
             setSuccess(data.message);
             setTimeout(() => {
-                navigate('/login')
+                navigate('/E-comerce/login')
             }, 500)
         }).catch((errors) => {
             let err = errors.response.data;
@@ -163,7 +163,7 @@ export default function Register() {
                                     </div>
                                     <hr className="mb-6 border-t" />
                                     <div className="text-center">
-                                        <Link to='/login' className="inline-block text-sm text-red-500 dark:text-red-500 align-baseline hover:text-red-800 hover:underline"
+                                        <Link to='/E-comerce/login' className="inline-block text-sm text-red-500 dark:text-red-500 align-baseline hover:text-red-800 hover:underline"
                                         >
                                             Already have an account? Login!
                                         </Link>

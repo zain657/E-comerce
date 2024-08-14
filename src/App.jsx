@@ -34,7 +34,7 @@ import CartProductContextProvider from './Context/CartProductContext'
 function App() {
   let router = createBrowserRouter([
     {
-      path: '', element: <Layout />, children: [
+      path: '/E-comerce/', element: <Layout />, children: [
         { index: true, element: <ProtectedRoute><Home /></ProtectedRoute> },
         { path: 'login', element: <ProtectedRouteForlog><Login /></ProtectedRouteForlog> },
         { path: 'register', element: <ProtectedRouteForlog><Register /></ProtectedRouteForlog> },

@@ -40,7 +40,7 @@ export default function Addresses() {
             <div className=" w-full h-screen bg-gray-100 dark:bg-slate-900">
             {isloading && <div className='relative z-10 dark:bg-slate-900 bg-white w-full h-screen'><Loading /></div>}
                 <div className="w-full mt-10 p-8">
-                <Link to='/addressesForm' className='w-full text-center bg-red-600 hover:bg-red-800 mb-4 py-2 block rounded-full font-bold text-white my-5'>Add New Address</Link>
+                <Link to='/E-comerce/addressesForm' className='w-full text-center bg-red-600 hover:bg-red-800 mb-4 py-2 block rounded-full font-bold text-white my-5'>Add New Address</Link>
                     <div className="m-6">
                         <div className="flex flex-wrap -mx-6">
                             {addresses?.map((address,i) => {

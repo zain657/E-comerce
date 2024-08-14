@@ -39,7 +39,7 @@ export default function UpdateProfile() {
             setIsLoading(false);
             setSuccess(data.message);
             setTimeout(() => {
-                navigate('/settings')
+                navigate('/E-comerce/settings')
             }, 500)
             
         }).catch((errors) => {
@@ -90,7 +90,7 @@ export default function UpdateProfile() {
                             <button type="submit" disabled={isLoading} className="w-full disabled:bg-slate-400 dark:disabled:bg-slate-400 text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Reset passwod {isLoading && <i className='fas fa-spin fa-spinner'></i>}</button>
                             {!isLoading && success && <p className='text-green-500 text-center'>{success}</p>}
                             {!isLoading && err && <p className='text-red-500 text-center'>{err}</p>}
-                            <Link to='/resetPassword' className='text-red-600 hover:underline font-bold'>Or reset password</Link>
+                            <Link to='/E-comerce/resetPassword' className='text-red-600 hover:underline font-bold'>Or reset password</Link>
                         </form>
                     </div>
                 </div>

@@ -39,7 +39,7 @@ export default function ResetPass() {
             setIsLoading(false);
             setSuccess(data.message);
             setTimeout(() => {
-                navigate('/login')
+                navigate('/E-comerce/login')
             }, 500)
         }).catch((errors) => {
             let err = errors.response.data;

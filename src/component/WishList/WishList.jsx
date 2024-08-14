@@ -53,7 +53,7 @@ export default function WishList() {
                 {products?.count>0 ? <div className='container px-4 mx-auto grid sm:grid-cols-2 xl:grid-cols-4 pt-20 pb-10 gap-5'>
                 {products?.data.map((wish,i) => {
                     return <div key={i} className="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
-                        <Link className='w-full' to={'/productDetails/' + wish._id}>
+                        <Link className='w-full' to={'/E-comerce/productDetails/' + wish._id}>
                         <div className={`${animatingProductId === wish._id ? 'animate-ping animate-once animate-duration-1000 animate-ease-in-out' : ''} w-full hover:shadow-[0_0_5px_0_rgba(220,38,38,1),0_0_15px_5px_rgba(220,38,38,0.5)] border-2 h-64 relative z-0 bg-gray-300 bg-center bg-cover hover:z-20 hover:scale-[1.05] transition-all duration-500 rounded-lg shadow-md `} style={{ backgroundImage: `url(${wish.imageCover})` }}>
                         <button type='button' onClick={(e)=>{removeProducts(wish._id); e.preventDefault();}} className='absolute top-5 right-5 p-3'><i className="fa-solid fa-x text-2xl z-20 text-black hover:text-red-800"></i></button>
                         </div>
