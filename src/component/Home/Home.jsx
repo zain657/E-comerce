@@ -38,7 +38,7 @@ export default function Home() {
                 {isLoading && <HomeLoading/>}
                 <HomeSlider/>
             <div className="container mt-14 mx-auto my-20">
-                <div className="grid grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-3">
+                <div className="grid grid-cols-2 px-3  lg:grid-cols-3 xl:grid-cols-4 gap-3">
                     {products?.map((product,index)=>{
                         return <Cards key={index} product={product}/>
                     
