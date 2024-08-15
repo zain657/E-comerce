@@ -6,7 +6,7 @@ import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../Context/AuthContext'
 
-export default function Register() {
+export default function Login() {
     const navigate = useNavigate();
     const [isLoading,setIsLoading]=useState(false);
     const [err,setErr]=useState();
