@@ -11,16 +11,18 @@ export default function CartCard({ product, removeProductFromCart, products, set
             removeProductFromCart(id);
         }
         setIsloadingForCount(true);
-        let { data } = await axios.put('https://ecommerce.routemisr.com/api/v1/cart/' + id,
-            {
-                count,
-            }
-            , {
-                headers: {
-                    token: localStorage.getItem('token'),
+        if(count>=1){
+            let { data } = await axios.put('https://ecommerce.routemisr.com/api/v1/cart/' + id,
+                {
+                    count,
                 }
-            })
-        setProducts(data);
+                , {
+                    headers: {
+                        token: localStorage.getItem('token'),
+                    }
+                })
+            setProducts(data);
+        }
         setIsloadingForCount(false);
     }
 
