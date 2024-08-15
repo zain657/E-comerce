@@ -88,7 +88,7 @@ export default function ProductDetails() {
                             <button type='button' onClick={slideOrClick} className='mx-auto mb-2 bg-red-600 flex gap-2 items-center text-white px-6 py-2 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2'>{!slider ? 'Image slide' : 'Image Click'}</button>
                         </div>
                         <div className="w-full md:w-1/2 px-4 dark:text-white">
-                            <h2 className="text-3xl font-bold mb-2">Premium Wireless Headphones</h2>
+                            <h2 className="text-3xl font-bold mb-2 mt-7 md:mt-0">{productDetails?.title}</h2>
                             <p className="text-gray-600 mb-4">Brand: {productDetails?.brand.name}</p>
                             <div className="mb-4">
                                 {productDetails?.priceAfterDiscount ? <span className="text-2xl font-bold mr-2">{productDetails?.priceAfterDiscount}$</span> : <span className="text-2xl font-bold mr-2">{productDetails?.price}$</span>}

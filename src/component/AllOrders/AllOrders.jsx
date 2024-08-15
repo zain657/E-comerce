@@ -1,16 +1,10 @@
-import axios from 'axios'
 import React, { useEffect } from 'react'
-import { jwtDecode } from 'jwt-decode';
+import { useNavigate } from 'react-router-dom'
 
 export default function AllOrders() {
-    const decoded = jwtDecode(localStorage.getItem('token'));
-
-    async function getAllOrders() {
-        let {data} = await axios.get('https://ecommerce.routemisr.com/api/v1/orders/user/' + decoded.id)
-        console.log(data);
-    }
+    let navigate=useNavigate();
     useEffect(()=>{
-        getAllOrders()
+        navigate('/E-comerce/cart')
     },[])
     
     return (
