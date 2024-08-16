@@ -96,7 +96,7 @@ export default function Cart() {
                                 <h2 className="text-lg font-semibold mb-4">Summary</h2>
                                 <div className="flex justify-between mb-2">
                                     <span>Subtotal</span>
-                                    <span>${data?.data.data.totalCartPrice}</span>
+                                    <span>${products ? data?.data.data.totalCartPrice : "0.00"}</span>
                                 </div>
                                 <div className="flex justify-between mb-2">
                                     <span>Taxes</span>
@@ -109,7 +109,7 @@ export default function Cart() {
                                 <hr className="my-2" />
                                 <div className="flex justify-between mb-2">
                                     <span className="font-semibold">Total</span>
-                                    <span className="font-semibold">${data?.data.data.totalCartPrice}</span>
+                                    <span className="font-semibold">${products ? data?.data.data.totalCartPrice : "0.00"}</span>
                                 </div>
                                 <Link to={'/E-comerce/shippingAddress/' + data?.data.data._id} className="bg-red-500 block text-center hover:bg-red-700 text-white py-2 px-4 rounded-lg mt-4 w-full">Checkout</Link>
                             </div>
